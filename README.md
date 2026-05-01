@@ -18,7 +18,7 @@ VoterAI is a modern, interactive web application designed to simplify the electi
 
 ## How to Run
 To run the app you need to start the app it is a very interactive app to use you just need to paste the code d will run the app is completely by Antigravity .Simply open `index.html` in any modern web browser.
-<img width="108" height="141" alt="09aa950a-a909-4e71-a02d-9ec591d3e73d" src="https://github.com/user-attachments/assets/cb2b891e-21b6-4571-948e-b2ae4bd87c61" />
+<img width="800" height="141" alt="09aa950a-a909-4e71-a02d-9ec591d3e73d" src="https://github.com/user-attachments/assets/cb2b891e-21b6-4571-948e-b2ae4bd87c61" />
 
 
 ## Deployment
