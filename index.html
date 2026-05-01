@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter | Your Election Assistant</title>
+    <meta name="description"
+        content="Master the election process with CivicFlow. Timelines, registration steps, and interactive guidance for every voter.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Voter<span>AI</span></div>
+            <ul class="nav-links">
+                <li><a href="#facts">Facts</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#steps">Steps</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#news">News</a></li>
+                <li><button class="btn-primary" onclick="toggleAssistant()">Talk to Vota</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="animate-up">Democracy, <br><span class="gradient-text">Simplified.</span></h1>
+            <p class="animate-up delay-1">Navigate the election cycle with confidence. Get personalized steps, track key
+                dates, and make your voice heard.</p>
+            <div class="hero-actions animate-up delay-2">
+                <a href="#steps" class="btn-primary-large">Start Registration</a>
+                <a href="#timeline" class="btn-secondary-large">View Timeline</a>
+            </div>
+        </div>
+        <div class="hero-visual animate-fade">
+            <div class="image-container">
+                <img src="election_hero_banner_1777545884886.png" alt="Digital Election Illustration">
+                <div class="glass-overlay"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="facts" class="facts-section">
+        <div class="section-header">
+            <h2 class="section-title">Some Facts About Indian Election</h2>
+            <p>Essential knowledge for every responsible citizen.</p>
+        </div>
+        <div class="facts-container">
+            <div class="facts-visual">
+                <img src="indian_election_facts_illustration_1777559392239.png" alt="Election Facts Illustration">
+            </div>
+            <div class="facts-list">
+                <div class="fact-item">
+                    <span class="fact-number">1</span>
+                    <div class="fact-content">
+                        <h4>Who conducts elections in India?</h4>
+                        <p>Elections in India are conducted by the Election Commission of India.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">2</span>
+                    <div class="fact-content">
+                        <h4>What system of government does India follow?</h4>
+                        <p>India follows a democratic system where citizens elect their representatives.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">3</span>
+                    <div class="fact-content">
+                        <h4>What is the minimum voting age?</h4>
+                        <p>The minimum voting age is 18 years.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">4</span>
+                    <div class="fact-content">
+                        <h4>For which bodies are elections held?</h4>
+                        <p>Elections are held for Lok Sabha, State Assemblies, and local bodies.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">5</span>
+                    <div class="fact-content">
+                        <h4>How often are Lok Sabha elections held?</h4>
+                        <p>Lok Sabha elections are usually held every 5 years.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">6</span>
+                    <div class="fact-content">
+                        <h4>Which electoral system does India use?</h4>
+                        <p>India uses the First-Past-The-Post system.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">7</span>
+                    <div class="fact-content">
+                        <h4>How is voting conducted?</h4>
+                        <p>Voting is done using Electronic Voting Machines (EVMs).</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">8</span>
+                    <div class="fact-content">
+                        <h4>How large is India's electorate?</h4>
+                        <p>India has one of the largest electorates in the world.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">9</span>
+                    <div class="fact-content">
+                        <h4>What is the role of political parties?</h4>
+                        <p>Political parties play a major role in elections.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">10</span>
+                    <div class="fact-content">
+                        <h4>Who ensures free and fair elections?</h4>
+                        <p>Free and fair elections are ensured by the Constitution of India.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline-section">
+        <div class="section-header">
+            <h2 class="section-title">Election Cycle Timeline</h2>
+            <p>Important milestones you shouldn't miss.</p>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-track">
+                <div class="timeline-item active" data-step="1">
+                    <div class="dot"></div>
+                    <div class="info">
+                        <h3>Registration Open</h3>
+                        <p>Now - Ongoing</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-step="2">
+                    <div class="dot"></div>
+                    <div class="info">
+                        <h3>Primary Elections</h3>
+                    </div>
+                </div>
+                <div class="timeline-item" data-step="3">
+                    <div class="dot"></div>
+                    <div class="info">
+                        <h3>Registration Deadline</h3>
+                    </div>
+                </div>
+                <div class="timeline-item" data-step="4">
+                    <div class="dot"></div>
+                    <div class="info">
+                        <h3>Mail-in Voting</h3>
+                        <p>Oct 20, 2026</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight" data-step="5">
+                    <div class="dot"></div>
+                    <div class="info">
+                        <h3>Election Day</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="steps" class="steps-section">
+        <div class="section-header">
+            <h2 class="section-title">Your 4-Step Guide</h2>
+            <p>From registration to casting your ballot.</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card" id="step-1">
+                <div class="step-number">01</div>
+                <h3>Check Registration</h3>
+                <p>Ensure your status is active and your details are up to date in the voter rolls.</p>
+                <a href="https://voters.eci.gov.in/" class="btn-card" target="_blank">check now</a>
+            </div>
+            <div class="step-card" id="step-2">
+                <div class="step-number">02</div>
+                <h3>Register to Vote</h3>
+                <p>New voter? Moved recently? Complete your registration online or via mail.</p>
+                <a href="https://voters.eci.gov.in/" class="btn-card" target="_blank">Register now</a>
+            </div>
+            <div class="step-card" id="step-3">
+                <div class="step-number">03</div>
+                <h3>Research Ballot</h3>
+                <p>Review the candidates and measures that will appear on your specific ballot.</p>
+                <a href="https://voters.eci.gov.in/" class="btn-card" target="_blank">plan your day</a>
+            </div>
+            <div class="step-card" id="step-4">
+                <div class="step-number">04</div>
+                <h3>Cast Your Vote</h3>
+                <p>Find your polling place or request a mail-in ballot to make it official.</p>
+                <a href="https://voters.eci.gov.in/" class="btn-card" target="_blank">Find your polling</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="news-section">
+        <div class="section-header">
+            <h2 class="section-title">News</h2>
+            <p>Stay updated with the latest happenings in Indian Democracy.</p>
+        </div>
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-image">
+                    <img src="lok_sabha_news_thumbnail_1777611262400.png" alt="Lok Sabha News">
+                </div>
+                <div class="news-content">
+                    <span class="news-tag">Parliament</span>
+                    <h3>Lok Sabha News</h3>
+                    <p>Get the latest updates on proceedings, bills, and announcements from the House of the People.</p>
+                    <a href="https://loksabha.nic.in/" target="_blank" class="btn-news">Know More</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-image">
+                    <img src="rajya_sabha_news_thumbnail_1777611278171.png" alt="Rajya Sabha News">
+                </div>
+                <div class="news-content">
+                    <span class="news-tag">Parliament</span>
+                    <h3>Rajya Sabha News</h3>
+                    <p>Stay informed about the debates, discussions, and legislative activities in the Council of States.</p>
+                    <a href="https://sansad.in/rs" target="_blank" class="btn-news">Know More</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-image">
+                    <img src="election_hero_concept_1777541099319.png" alt="Election News">
+                </div>
+                <div class="news-content">
+                    <span class="news-tag">Elections</span>
+                    <h3>Recent Election News</h3>
+                    <p>Comprehensive coverage of recent election results, upcoming polls, and voter trends across India.</p>
+                    <a href="https://www.ndtv.com/election" target="_blank" class="btn-news">Know More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="history-section">
+        <div class="history-container">
+            <div class="history-text">
+                <h2 class="section-title">A Legacy of Rights</h2>
+                <p class="history-lead">The right to vote is the foundation of our democracy, secured through
+                    generations of advocacy and sacrifice.</p>
+                <div class="history-grid">
+                    <div class="history-card">
+                        <h4 class="heading">Constitutional Foundation</h4>
+                        <p>The constitutional foundation of India developed through a long historical process under
+                            British rule and the freedom struggle. Early laws like the Regulating Act of 1773 and later
+                            reforms gradually introduced administrative and legislative systems. The Government of India
+                            Act 1935 became the main structural basis for the Constitution. Indian leaders such as
+                            Mahatma Gandhi and Bal Gangadhar Tilak demanded self-rule and rights. The Constituent
+                            Assembly was formed in 1946 to draft the Constitution. It included key figures like Dr. B.
+                            R. Ambedkar, who played a major role. The Constitution was influenced by various global
+                            constitutions and Indian traditions. It aimed to establish justice, liberty, equality, and
+                            fraternity. The final draft was adopted on 26 November 1949. It came into effect on 26
+                            January 1950, making India a sovereign democratic republic.</p>
+                    </div>
+                    <div class="history-card">
+                        <h4 class="heading">Expansion of Rights</h4>
+                        <p>The expansion of rights refers to the gradual increase of rights given to people over time.
+                            In earlier times, rights were limited to a few sections of society. With social reforms and
+                            movements, more people began to gain equal rights. In India, this process became strong
+                            after independence. The Constitution of India guaranteed fundamental rights to all citizens.
+                            These include rights like equality, freedom, and justice. Special provisions were made for
+                            weaker and marginalized sections. Women and minorities also received equal legal rights over
+                            time. New laws continue to expand rights in areas like education and employment. Thus,
+                            expansion of rights makes society more fair, inclusive, and democratic.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="history-visual">
+                <img src="voting_history_illustration_1777546609798.png" alt="Voting History Illustration">
+                <div class="accent-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Assistant Widget -->
+    <div id="assistant-widget" class="assistant-hidden">
+        <div class="assistant-header">
+            <div class="assistant-id">
+                <div class="status-dot"></div>
+                <span>Vota AI Assistant</span>
+            </div>
+            <button onclick="toggleAssistant()" class="close-btn">&times;</button>
+        </div>
+        <div class="assistant-messages" id="chat-messages">
+            <div class="message bot">
+                Hi! I'm Vota. I can help you with registration deadlines, finding your polling place, or explaining how
+                mail-in voting works. What's on your mind?
+            </div>
+        </div>
+        <div class="assistant-input">
+            <input type="text" id="user-input" placeholder="Ask a question..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()" class="send-btn">→</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Voter<span>AI</span></div>
+            <p>Empowering citizens through information and technology.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Official Govt Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
