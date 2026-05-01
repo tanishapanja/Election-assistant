@@ -17,7 +17,7 @@ VoterAI is a modern, interactive web application designed to simplify the electi
 - **JavaScript (ES6)**: Dynamic interactivity and chatbot logic.
 
 ## How to Run
-
+To run the app you need to start the app it is a very interactive app to use you just need to paste the code d will run the app is completely by Antigravity .
 Simply open `index.html` in any modern web browser.
 
 ## Deployment
