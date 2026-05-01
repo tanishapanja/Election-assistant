@@ -174,9 +174,9 @@ function addMessage(text, sender) {
 function getAssistantResponse(query) {
     const q = query.toLowerCase();
     
-    // Check for "ok" response
-    if (q === 'ok') {
-        return "I am glad to help you";
+    // Check for positive/closing response
+    if (q === 'ok' || q.includes('thank you') || q.includes('see you') || q.includes('grateful')) {
+        return "I am glad to help you, have a nice day.";
     }
 
     // Check for Greetings
